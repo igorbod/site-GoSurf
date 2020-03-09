@@ -6,12 +6,49 @@
       background: url(../img/header/header-bg-main.jpg) center (center/cover) no-repeat #394a50;
     }
   }
+
+  &-slide-next,
+  &-slide-prev {
+    position: absolute;
+    top: 35px;
+    right: 82px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &-slide-prev {
+    right: 125px;
+  }
+
 }
 
 .slider-item {
   &__info {
+    color: #ffffff;
+    text-align: right;
     position: absolute;
     right: 80px;
     bottom: 115px;
+    &-suptitle {
+      margin-bottom: 20px;
+    }
+    &-title {
+      font-size: 80px;
+      font-weight: 800;
+      line-height: 86px;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+    &-name {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    .info-link__image {
+      display: inline-block;
+    }
   }
 }
+

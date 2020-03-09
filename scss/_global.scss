@@ -1,0 +1,33 @@
+body {
+  font-family: 'FiraSans';
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a {
+  display: inline-block;
+}
+
+
+.suptitle-left,
+.suptitle-right {
+  position: relative;
+  display: inline-block;
+  color: $sup;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 7.33px;
+  text-transform: uppercase;
+}
+
+.suptitle-left::before {
+  content: '';
+  position: absolute;
+  background-color: $sup;
+  height: 1px;
+  width: 80px;
+  top: 50%;
+  left: -23px;
+  transform: translateX(-100%);
+}

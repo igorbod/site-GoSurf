@@ -1,6 +1,7 @@
 @import "variables";
 @import "libs";
 @import "fonts";
+@import "global";
 @import "blocks/header";
 
 
@@ -9,6 +10,3 @@
 
 @import "media";
 
-.suptitle-left {
-  color: $sup;
-}
