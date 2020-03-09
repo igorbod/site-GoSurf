@@ -1,0 +1,17 @@
+.header {
+  position: relative;
+  &__slider {
+    &-item {
+      height: 100vh;
+      background: url(../img/header/header-bg-main.jpg) center (center/cover) no-repeat #394a50;
+    }
+  }
+}
+
+.slider-item {
+  &__info {
+    position: absolute;
+    right: 80px;
+    bottom: 115px;
+  }
+}
