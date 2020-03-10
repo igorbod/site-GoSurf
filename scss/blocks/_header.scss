@@ -1,5 +1,90 @@
 .header {
   position: relative;
+  &__title {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    z-index: 1;
+    max-width: 470px;
+  }
+  &__aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 168px;
+    width: 100%;
+    height: 100vh;
+    border-right: 1px solid rgba(255, 255, 255, .25); 
+    z-index: 1;
+    }
+
+  &__logo {
+    margin-bottom: 70px;
+    &-img {
+      max-width: 168px;
+      max-height: 290px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__search {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    &-day {
+      font-size: 72px;
+      font-weight: 800;
+      line-height: 64px;
+      margin-bottom: 10px;
+    }
+    &-month,
+    &-year {
+      position: relative;
+      display: inline-block;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 1.4px;
+    }
+    &-month::after {
+      position: absolute;
+      content: "";
+      top: 2px;
+      right: -8px;
+      width: 1px;
+      height: 15px;
+      background-color: #ffffff;
+    }
+    &-year {
+      margin-left: 13px;
+    }
+  }
+
+  &__location {
+    text-align: center;
+    &-img {
+      display: inline-block;
+      max-width: 11px;
+      max-height: 14px;
+      margin-right: 6px;
+    }
+
+    &-name {
+      display: inline-block;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 14px;
+      letter-spacing: 1.05px;
+    }
+  }
+
   &__slider {
     &-item {
       height: 100vh;
@@ -18,6 +103,38 @@
 
   &-slide-prev {
     right: 125px;
+  }
+}
+
+.menu {
+  margin-bottom: 38px;
+  &__list {
+    padding: 0;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 37px;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &-img {
+      display: block;
+      max-width: 60px;
+      max-height: 50px;
+      margin-bottom: 7px;
+    }
+    &-name {
+      display: block;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 3px;
+    }
   }
 }
 
