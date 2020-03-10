@@ -88,9 +88,65 @@
     right: 0;
     top: 0;
     z-index: 1;
+    &-place-1,
+    &-place-2,
+    &-place-3,
+    &-place-4,
+    &-place-current {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      display: none;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19px;
+    }
+    &-place-current {
+      top: 65px;
+      right: 290px;
+    }
+    &-place-1 {
+      top: 205px;
+      right: 650px;
+    }
+    &-place-2 {
+      top: 300px;
+      right: 440px;
+    }
+    &-place-3 {
+      top: 340px;
+      right: 355px;
+    }
+    &-place-4 {
+      top: 445px;
+      right: 290px;
+    }
     &-dot-1 {
       animation-delay: 500ms
     }
+    &-dot-2 {
+      animation-delay: 800ms
+    }
+    &-dot-3 {
+      animation-delay: 1100ms
+    }
+    &-dot-4 {
+      animation-delay: 1300ms
+    }
+    &-dot-current {
+      animation-delay: 1750ms
+    }
+    &-path-1,
+    &-path-2,
+    &-path-3,
+    &-path-4 {
+      display: none;
+    }
+    &-path-1 {
+      display: block;
+    }
+
   }
 
   &__slider {

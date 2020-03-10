@@ -106,6 +106,18 @@
   animation-name: fadeInDown;
 }
 
+.line-animation {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: linear 3s infinite 6s;
+}
+
+@keyframes linear {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
