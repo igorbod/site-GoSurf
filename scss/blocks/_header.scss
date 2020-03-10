@@ -16,6 +16,7 @@
     height: 100vh;
     border-right: 1px solid rgba(255, 255, 255, .25); 
     z-index: 1;
+    text-align: center;
     }
 
   &__logo {
@@ -29,13 +30,11 @@
   }
 
   &__search {
-    text-align: center;
     margin-bottom: 20px;
   }
 
   &__date {
     color: #ffffff;
-    text-align: center;
     margin-bottom: 30px;
     &-day {
       font-size: 72px;
@@ -67,7 +66,6 @@
   }
 
   &__location {
-    text-align: center;
     &-img {
       display: inline-block;
       max-width: 11px;
@@ -82,6 +80,16 @@
       font-weight: 300;
       line-height: 14px;
       letter-spacing: 1.05px;
+    }
+  }
+
+  &__map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    &-dot-1 {
+      animation-delay: 500ms
     }
   }
 
@@ -108,15 +116,11 @@
 
 .menu {
   margin-bottom: 38px;
-  &__list {
-    padding: 0;
-  }
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 37px;
-    cursor: pointer;
     &:last-child {
       margin-bottom: 0;
     }
@@ -124,6 +128,7 @@
       display: block;
       max-width: 60px;
       max-height: 50px;
+      margin: 0 auto;
       margin-bottom: 7px;
     }
     &-name {
@@ -135,6 +140,20 @@
       text-align: center;
       letter-spacing: 3px;
     }
+  }
+}
+
+.button__next-section {
+  position: absolute;
+  bottom: 45px;
+  left: 210px;
+  z-index: 1;
+  animation-duration: 1s;
+  // animation-delay: 5s;
+  animation-iteration-count: infinite;
+  &-img {
+    max-width: 21px;
+    max-height: 24px;
   }
 }
 
