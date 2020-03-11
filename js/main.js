@@ -57,4 +57,25 @@ window.addEventListener('DOMContentLoaded', function () {
         }
       });
   });
+
+  // Get current date
+  let curDate = new Date(),
+      curDay = document.querySelector('.header__date-day'),
+      curMonth = document.querySelector('.header__date-month'),
+      curYear = document.querySelector('.header__date-year');
+
+  // add null when get 1 digit
+  function zero(num) {
+    if (num <= 9) {
+      return '0' + num;
+    } else return num;
+  }
+
+  curDay.textContent = curDate.getDate();
+  curMonth.textContent = zero(curDate.getMonth()+1);
+  curYear.textContent = zero(curDate.getFullYear());
+
+
+
+
 });
