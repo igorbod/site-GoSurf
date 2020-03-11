@@ -23,38 +23,38 @@ window.addEventListener('DOMContentLoaded', function () {
   let buttonSlider = document.querySelectorAll('img[class*="header-slide-"]'),
       sliderIndex = 0;
 
-  // buttonSlider.forEach(function(button) {
-  //   button.addEventListener('click', function() {
-  //     let sliderCur = document.querySelector('.slick-current'),
-  //         sliderIndex = sliderCur.getAttribute('data-slick-index'),
-  //         dots = document.querySelectorAll('path[class^="header__map-dot"]'),
-  //         paths = document.querySelectorAll('path[class^="header__map-path"]'),
-  //         placesName = document.querySelectorAll('div[class^="header__map-place"]');
+  buttonSlider.forEach(function(button) {
+    button.addEventListener('click', function() {
+      let sliderCur = document.querySelector('.slick-current'),
+          sliderIndex = sliderCur.getAttribute('data-slick-index'),
+          dots = document.querySelectorAll('path[class^="header__map-dot"]'),
+          paths = document.querySelectorAll('path[class^="header__map-path"]'),
+          placesName = document.querySelectorAll('div[class^="header__map-place"]');
 
-  //     dots.forEach(function(item) {
-  //       item.removeAttribute('stroke');
-  //       item.removeAttribute('stroke-width');
-  //       item.removeAttribute('stroke-linejoin');
-  //     });
+      dots.forEach(function(item) {
+        item.removeAttribute('stroke');
+        item.removeAttribute('stroke-width');
+        item.removeAttribute('stroke-linejoin');
+      });
 
-  //     paths.forEach(function (item) {
-  //       item.style.display = "none";
-  //     });
+      paths.forEach(function (item) {
+        item.style.display = "none";
+      });
 
-  //     placesName.forEach(function (item) {
-  //       item.style.display = "none";
-  //     });
+      placesName.forEach(function (item) {
+        item.style.display = "none";
+      });
 
-  //     for (let i = 0; i <= paths.length; i++) {
-  //       if (sliderIndex == i) {
-  //         dots[i].setAttribute('stroke', '#4AF6CD');
-  //         dots[i].setAttribute('stroke-width', '10px');
-  //         dots[i].setAttribute('stroke-linejoin', 'round');
-  //         placesName[i].style.display = "block";
-  //         paths[i].style.display = "block";
-  //         paths[i].classList.add('line-animation');
-  //         }
-  //       }
-  //     });
-  // });
+      for (let i = 0; i <= paths.length; i++) {
+        if (sliderIndex == i) {
+          dots[i].setAttribute('stroke', '#4AF6CD');
+          dots[i].setAttribute('stroke-width', '10px');
+          dots[i].setAttribute('stroke-linejoin', 'round');
+          placesName[i].style.display = "block";
+          paths[i].style.display = "block";
+          paths[i].classList.add('line-animation');
+          }
+        }
+      });
+  });
 });

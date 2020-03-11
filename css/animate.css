@@ -106,15 +106,47 @@
   animation-name: fadeInDown;
 }
 
-.line-animation {
-  stroke-dashoffset: 600;
-  stroke-dasharray: 600;
-  animation: linear 3s infinite 6s;
+.line-animation-1 {
+  stroke-dasharray: 660 660;
+  animation-name: anim-path-1;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
 }
 
-@keyframes linear {
-  to {
-    stroke-dashoffset: 0;
+@keyframes anim-path-1 {
+  0% {
+    stroke-dasharray: 0 660;
+  }
+  50% {
+    stroke-dasharray: 300 660;
+  }
+  100% {
+    stroke-dasharray: 660 660;
+  }
+}
+
+.line-animation-4 {
+  stroke-dasharray: 820 820;
+  animation-name: anim-path-4;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+
+@keyframes anim-path-4 {
+  0% {
+    stroke-dasharray: 0 820;
+  }
+
+  50% {
+    stroke-dasharray: 400 820;
+  }
+
+  100% {
+    stroke-dasharray: 820 820;
   }
 }
 

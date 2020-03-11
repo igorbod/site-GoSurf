@@ -92,7 +92,7 @@
     &-place-2,
     &-place-3,
     &-place-4,
-    &-place-current {
+    &-current {
       position: absolute;
       z-index: 1;
       top: 0;
@@ -102,11 +102,13 @@
       font-weight: 300;
       line-height: 19px;
     }
-    &-place-current {
+    &-current {
+      display: block;
       top: 65px;
       right: 290px;
     }
     &-place-1 {
+      display: block;
       top: 205px;
       right: 650px;
     }
@@ -135,7 +137,7 @@
       animation-delay: 1300ms
     }
     &-dot-current {
-      animation-delay: 1750ms
+      // animation-delay: 300ms
     }
     &-path-1,
     &-path-2,
@@ -146,7 +148,6 @@
     &-path-1 {
       display: block;
     }
-
   }
 
   &__slider {
