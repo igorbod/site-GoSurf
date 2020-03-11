@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', function () {
       });
   });
 
-  // Get current date
+  // Get and set current date
   let curDate = new Date(),
       curDay = document.querySelector('.header__date-day'),
       curMonth = document.querySelector('.header__date-month'),
@@ -75,7 +75,12 @@ window.addEventListener('DOMContentLoaded', function () {
   curMonth.textContent = zero(curDate.getMonth()+1);
   curYear.textContent = zero(curDate.getFullYear());
 
+  // Get and set current location
 
-
-
-});
+  if (YMaps.location) // Check available
+  {
+    $(".header__location-name").html(YMaps.location.city);
+  } else
+    alert("Please, allow access to your geoposition!");
+    $(".header__location-name").html("Unknown");
+  });
