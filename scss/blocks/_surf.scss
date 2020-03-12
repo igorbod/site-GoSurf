@@ -1,0 +1,28 @@
+.surf {
+  padding: 160px 0 50px;
+  &__title {
+    margin-left: 240px;
+  }
+  &__subtitle {
+    &-bottom {
+      &-vertline {
+        font-weight: 300;
+      }
+    }
+    &-wrap {
+      position: relative;
+      text-align: right;
+      padding-right: 80px;
+      margin-top: 80px;
+    }
+  }
+  &__location-img {
+    display: block;
+    position: absolute;
+    top: -85px;
+    right: -140px;
+    width: 295px;
+    height: 350px;
+    opacity: 0.03;
+  }
+}
