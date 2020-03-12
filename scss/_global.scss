@@ -97,18 +97,21 @@ ul {
 .slider-prev,
 .slider-next {
   position: absolute;
-  top: 35px;
+  top: 55px;
   right: 82px;
   cursor: pointer;
   z-index: 1;
   opacity: 0.25;
-  &_header {
-    opacity: 1;
-  }
 }
 
 .slider-prev {
   right: 125px;
+}
+
+.slider-prev_header,
+.slider-next_header {
+  top: 35px;
+  opacity: 1;
 }
 
 .btn-box {

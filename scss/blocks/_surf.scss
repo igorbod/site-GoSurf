@@ -27,10 +27,18 @@
   }
   &-slider {
     padding-top: 110px;
+    .slick-current {
+      .btn-box_surf {
+        display: block;
+      }
+      &::after {
+        opacity: .3;
+      }
+    }
   }
   &-slider__item {
     position: relative;
-    max-width: 400px;
+    // max-width: 400px;
     min-height: 750px;
     background-position: center;
     background-size: cover;
@@ -46,19 +54,41 @@
       background-color: #1c2121;
       opacity: 0.75;
       z-index: -1;
+      transition: all .5s;
+    }
+    &:hover {
+      &:after {
+        opacity: .3;
+      }
     }
     &-title {
       max-width: 50%;
     }
     &-placename {
       position: absolute;
-      bottom: 80px;
       left: 40px;
+      bottom: 80px;
+      white-space: nowrap;
+      width: 0;
+      height: 0;
       font-size: 18px;
       line-height: 22px;
       letter-spacing: 8px;
       text-transform: uppercase;
       transform: rotate(-90deg);
     }
+    &:nth-child(4n+1) {
+      margin-top: 32px;
+    }
+    &:nth-child(4n+3) {
+      margin-top: 90px;
+    }
+    &:nth-child(even) {
+      margin-left: -40px;
+    }
+    &:nth-child(3n+1) {
+      margin-left: -50px;
+    }
+    
   }
 }
