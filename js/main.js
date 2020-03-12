@@ -5,8 +5,8 @@ window.addEventListener('DOMContentLoaded', function () {
   $('.header__slider').slick({
     infinite: true,
     fade: true,
-    prevArrow: '<img src="img/icons/arrow-left.svg" alt="Previous" class="slick-prev header-slide-prev">',
-    nextArrow: '<img src="img/icons/arrow-right.svg" alt="Next" class="slick-next header-slide-next">',
+    prevArrow: '<img src="img/icons/arrow-left.svg" alt="Previous" class="slick-prev slider-prev slider-prev_header">',
+    nextArrow: '<img src="img/icons/arrow-right.svg" alt="Next" class="slick-next slider-next slider-next_header">',
     asNavFor: '.slider-dots'
   });
   
@@ -17,6 +17,14 @@ window.addEventListener('DOMContentLoaded', function () {
     slidesToScroll: 4,
     arrows: false,
     asNavFor: '.header__slider'
+  });
+
+  // Section "Surf" slider
+  $('.surf-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<img src="img/icons/arrow-left.svg" alt="Previous" class="slick-prev slider-prev">',
+    nextArrow: '<img src="img/icons/arrow-right.svg" alt="Next" class="slick-next slider-next">'
   });
 
   // change header map parts

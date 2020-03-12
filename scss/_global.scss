@@ -93,6 +93,24 @@ ul {
   }
 }
 
+// Slider buttons
+.slider-prev,
+.slider-next {
+  position: absolute;
+  top: 35px;
+  right: 82px;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.25;
+  &_header {
+    opacity: 1;
+  }
+}
+
+.slider-prev {
+  right: 125px;
+}
+
 .btn-box {
   display: block;
   font-size: 40px;
@@ -121,5 +139,15 @@ ul {
   &__arrow {
     display: inline-block;
     padding-left: 15px;
+  }
+  
+  // Surf section buttons style
+  &_surf {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
   }
 }

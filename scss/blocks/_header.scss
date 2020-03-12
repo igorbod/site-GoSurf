@@ -156,19 +156,7 @@
       background: url(../img/header/header-bg-main.jpg) center (center/cover) no-repeat #394a50;
     }
   }
-
-  &-slide-next,
-  &-slide-prev {
-    position: absolute;
-    top: 35px;
-    right: 82px;
-    cursor: pointer;
-    z-index: 1;
-  }
-
-  &-slide-prev {
-    right: 125px;
-  }
+ 
 }
 
 .menu {
