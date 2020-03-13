@@ -1,5 +1,8 @@
 .travel {
   padding: 0 0 280px;
+  .container {
+    position: relative;
+  }
   &__title {
     margin-left: 240px;
   }
@@ -11,6 +14,9 @@
       &-city {
         display: inline-block;
         margin-right: 25px;
+      }
+      img {
+        display: inline-block;
       }
     }
     &-wrap {
@@ -35,6 +41,7 @@
   &__slider {
     position: relative;
     &-item {
+      position: relative;
       min-height: 780px;
       &-bg {
         display: inline-block;
@@ -88,5 +95,11 @@
       opacity: 0.75;
       margin-top: 5px;
     }
+  }
+  &__cocktail {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(30%, 40%);
   }
 }

@@ -127,12 +127,20 @@ ul {
   opacity: 1;
 }
 
+.slider-prev_travel,
+.slider-next_travel {
+  top: 320px;
+}
+
 .btn-box {
   display: block;
   font-size: 40px;
   line-height: 1;
   font-weight: 800;
   text-transform: uppercase;
+  img {
+    display: inline-block;
+  }
   &__first {
     display: inline-block;
     position: relative;

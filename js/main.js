@@ -36,6 +36,14 @@ window.addEventListener('DOMContentLoaded', function () {
     focusOnSelect: true
   });
 
+  // Section Travel slider
+  $('.travel__slider').slick({
+    infinite: true,
+    fade: true,
+    prevArrow: '<img src="img/icons/arrow-left.svg" alt="Previous" class="slick-prev slider-prev slider-prev_travel slider-btn-travel">',
+    nextArrow: '<img src="img/icons/arrow-right.svg" alt="Next" class="slick-next slider-next slider-next_travel slider-btn-travel">'
+  });
+
   // change header map parts
   let buttonSlider = document.querySelectorAll('.slider-btn-header'),
       sliderIndex = 0;
