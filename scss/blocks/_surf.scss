@@ -36,7 +36,32 @@
       }
     }
     &__map {
-
+      overflow: initial;
+      max-width: 1200px;
+      min-height: 630px;
+      background: url(../img/surf/world-map-dots.png) center (center/cover) no-repeat;
+      margin: 0 auto;
+      .slick-list {
+        min-height: 630px;
+      }
+      .slick-current {
+        .dots-content {
+          display: block;
+        }
+      }
+    }
+    &__map-wrapper {
+      position: relative;
+    }
+    &__coordinates {
+      position: absolute;
+      font-size: 18px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      color: rgba(#ffffff, 0.7);
+      top: 50%;
+      transform: translateX(-50%) rotate(-90deg);
+      right: -20px;
     }
   }
   &-slider__item {
@@ -98,15 +123,77 @@
 
 // Map slider with interactive dots
 .surf-slider__dots {
-  display: inline-block;
+  position: relative;
+  &_1 {
+    position: absolute;
+    top: 300px;
+    left: 160px;
+  }
+  &_2 {
+    position: absolute;
+    top: 510px;
+    left: 960px;
+  }
+  &_3 {
+    position: absolute;
+    top: 350px;
+    left: 970px;
+  }
+  &_4 {
+    position: absolute;
+    top: 230px;
+    left: 550px;
+  }
+  &_5 {
+    position: absolute;
+    top: 480px;
+    left: 1060px;
+  }
+  &_6 {
+    position: absolute;
+    top: 360px;
+    left: 250px;
+  }
+  &_7 {
+    position: absolute;
+    top: 530px;
+    left: 1020px;
+  }
+  &_8 {
+    position: absolute;
+    top: 190px;
+    left: 570px;
+  }
+  &-circle {
+    width: 22px;
+    height: 22px;
+    background-color: $accent;
+    border-radius: 50%;
+  }
+}
+
+.dots-content {
+  display: none;
+  position: absolute;
   min-width: 290px;
   min-height: 220px;
   background-color: rgba(#0F1010, 0.7);
   border-radius: 6px;
   padding: 32px;
-}
-
-.dots-content {
+  transform: translate(calc(-50% + 12px), calc(-100% - 20px));
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid $accent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    bottom: -29px;
+    left: calc(50% - 13px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
   &__top {
     display: flex;
     flex-direction: column;
