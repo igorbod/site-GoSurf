@@ -24,7 +24,16 @@ window.addEventListener('DOMContentLoaded', function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: '<img src="img/icons/arrow-left.svg" alt="Previous" class="slick-prev slider-prev">',
-    nextArrow: '<img src="img/icons/arrow-right.svg" alt="Next" class="slick-next slider-next">'
+    nextArrow: '<img src="img/icons/arrow-right.svg" alt="Next" class="slick-next slider-next">',
+    asNavFor: '.surf-slider__map'
+  });
+
+  $('.surf-slider__map').slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.surf-slider',
+    focusOnSelect: true
   });
 
   // change header map parts

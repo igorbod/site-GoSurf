@@ -35,6 +35,9 @@
         opacity: .3;
       }
     }
+    &__map {
+
+    }
   }
   &-slider__item {
     position: relative;
@@ -92,3 +95,77 @@
     
   }
 }
+
+// Map slider with interactive dots
+.surf-slider__dots {
+  display: inline-block;
+  min-width: 290px;
+  min-height: 220px;
+  background-color: rgba(#0F1010, 0.7);
+  border-radius: 6px;
+  padding: 32px;
+}
+
+.dots-content {
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    &-row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 26px;
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      bottom: -13px;
+      left: 0;
+      width: 80px;
+      height: 1px;
+      background-color: $accent;
+    }
+  }
+  &__subtitle {
+    font-size: 16px;
+  }
+  &__link {
+    display: inline-block;
+    &-img {
+      width: 16px;
+      height: 13.5px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
+    &-icon {
+      display: inline-block;
+      margin-bottom: 7px;
+    }
+    &-text {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+    &-subtext {
+      font-size: 10px;
+      font-weight: 300;
+    }
+  }
+  
+}
+
