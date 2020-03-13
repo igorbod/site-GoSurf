@@ -5,8 +5,8 @@ window.addEventListener('DOMContentLoaded', function () {
   $('.header__slider').slick({
     infinite: true,
     fade: true,
-    prevArrow: '<img src="img/icons/arrow-left.svg" alt="Previous" class="slick-prev slider-prev slider-prev_header">',
-    nextArrow: '<img src="img/icons/arrow-right.svg" alt="Next" class="slick-next slider-next slider-next_header">',
+    prevArrow: '<img src="img/icons/arrow-left.svg" alt="Previous" class="slick-prev slider-prev slider-prev_header slider-btn-header">',
+    nextArrow: '<img src="img/icons/arrow-right.svg" alt="Next" class="slick-next slider-next slider-next_header slider-btn-header">',
     asNavFor: '.slider-dots'
   });
   
@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 
   // change header map parts
-  let buttonSlider = document.querySelectorAll('img[class*="header-slide-"]'),
+  let buttonSlider = document.querySelectorAll('.slider-btn-header'),
       sliderIndex = 0;
 
   buttonSlider.forEach(function(button) {
@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', function () {
           dots = document.querySelectorAll('path[class^="header__map-dot"]'),
           paths = document.querySelectorAll('path[class^="header__map-path"]'),
           placesName = document.querySelectorAll('div[class^="header__map-place"]');
-
+      
       dots.forEach(function(item) {
         item.removeAttribute('stroke');
         item.removeAttribute('stroke-width');
@@ -62,14 +62,14 @@ window.addEventListener('DOMContentLoaded', function () {
         item.style.display = "none";
       });
 
-      for (let i = 0; i <= paths.length; i++) {
-        if (sliderIndex == i) {
-          dots[i].setAttribute('stroke', '#4AF6CD');
-          dots[i].setAttribute('stroke-width', '10px');
-          dots[i].setAttribute('stroke-linejoin', 'round');
-          placesName[i].style.display = "block";
-          paths[i].style.display = "block";
-          paths[i].classList.add('line-animation');
+        for (let i = 0; i <= paths.length; i++) {
+          if (sliderIndex == i) {
+            dots[i].setAttribute('stroke', '#4AF6CD');
+            dots[i].setAttribute('stroke-width', '10px');
+            dots[i].setAttribute('stroke-linejoin', 'round');
+            placesName[i].style.display = "block";
+            paths[i].style.display = "block";
+            paths[i].classList.add('line-animation');
           }
         }
       });
@@ -92,9 +92,9 @@ window.addEventListener('DOMContentLoaded', function () {
   curMonth.textContent = zero(curDate.getMonth()+1);
   curYear.textContent = zero(curDate.getFullYear());
 
-  // Get and set current location using "ipwhois"
+  /* // Get and set current location using "ipwhois"
   let ipaddress = "";
   let ipwhois = request_ipwhois(ipaddress);
   $(".header__location-name").html(ipwhois.city);
-  $(".header__map-current").html(ipwhois.city);
+  $(".header__map-current").html(ipwhois.city); */
 });
