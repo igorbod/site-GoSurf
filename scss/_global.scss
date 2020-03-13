@@ -32,6 +32,7 @@ ul {
   font-weight: 800;
   line-height: 1;
   text-transform: uppercase;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -56,6 +57,17 @@ ul {
   top: 50%;
   left: -23px;
   transform: translateX(-100%);
+}
+
+.suptitle-right::before {
+  content: '';
+  position: absolute;
+  background-color: $sup;
+  height: 1px;
+  width: 80px;
+  top: 50%;
+  right: -23px;
+  transform: translateX(100%);
 }
 
 .section__title {
@@ -86,7 +98,8 @@ ul {
   &_header {
     opacity: 0.07;
   }
-  &_surf {
+  &_surf,
+  &_travel {
     position: absolute;
     top: 5px;
     left: -290px;
@@ -144,13 +157,18 @@ ul {
     padding-left: 15px;
   }
   
-  // Surf section buttons style
+  // Button: Surf section button
   &_surf {
     display: none;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
+    text-align: center;
+  }
+
+  // Button: Travel section
+  &_travel {
     text-align: center;
   }
 }

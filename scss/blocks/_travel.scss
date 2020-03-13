@@ -1,0 +1,92 @@
+.travel {
+  padding: 0 0 280px;
+  &__title {
+    margin-left: 240px;
+  }
+  &__subtitle {
+    &-bottom {
+      &-vertline {
+        font-weight: 300;
+      }
+      &-city {
+        display: inline-block;
+        margin-right: 25px;
+      }
+    }
+    &-wrap {
+      text-align: right;
+      padding-right: 80px;
+      margin-top: 200px;
+      &_left {
+        text-align-last: left;
+        padding-left: 135px;
+        margin-top: -110px;
+      }
+    }
+  }
+  &__airline {
+    &-plane {
+      display: block;
+      position: absolute;
+      bottom: 330px;
+      right: 0;
+    }
+  }
+  &__slider {
+    position: relative;
+    &-item {
+      min-height: 780px;
+      &-bg {
+        display: inline-block;
+        min-height: 780px;
+        max-width: 1120px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -225px;
+      }
+    }
+  }
+  &__info {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 280px;
+    }    
+    &-vert {
+      transform: rotate(180deg);
+      writing-mode: tb-rl;
+    }
+    &-title {
+      font-size: 18px;
+      letter-spacing: 8px;  
+      opacity: 0.5; 
+      margin-right: 18px; 
+      white-space: nowrap;
+    }
+    &-value {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 1;      
+    }
+    &-subvalue {
+      font-size: 14px;
+      text-align: right;
+      font-weight: 300;
+      letter-spacing: 5.25px;
+      opacity: 0.75;
+      margin-top: 5px;
+    }
+  }
+}
