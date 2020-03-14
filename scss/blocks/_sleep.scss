@@ -6,9 +6,76 @@
     line-height: 1;
     margin-left: 25px;
   }
+  &__info {
+    &-value {
+      position: relative;
+    }
+  }
 }
 
 .holder__subtitle-bottom_sleep {
   display: flex;
   align-items: center;
+}
+
+
+// counter
+.quantity {
+  display: inline-block;
+  max-width: 18%;
+  width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: default;
+  font-size: 40px;
+  font-weight: 800;
+  max-width: 100%;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+}
+
+.quantity-button {
+  position: absolute;
+  cursor: pointer;
+  color: $accent;
+  font-size: 40px;
+  font-weight: 300;
+  user-select: none;
+  width: 20px;
+  height: 40px;
+  top: 40px;
+  transition: all .3s;
+  &:hover {
+    text-shadow: 3px 5px 8px rgba(74, 246, 205, 0.5);
+  }
+}
+
+.quantity-button.quantity-up {
+  right: 35px;
+}
+
+.quantity-button.quantity-down {
+  right: 65px;
 }
