@@ -11,6 +11,8 @@
       position: relative;
     }
   }
+  &__summ {
+  }
 }
 
 .holder__subtitle-bottom_sleep {
@@ -73,9 +75,9 @@ input[type=number] {
 }
 
 .quantity-button.quantity-up {
-  right: 35px;
+  right: 60px;
 }
 
 .quantity-button.quantity-down {
-  right: 65px;
+  right: 90px;
 }

@@ -76,6 +76,20 @@ window.addEventListener('DOMContentLoaded', function () {
       spinner.find("input").trigger("change");
     });
   });
+
+  // calculate current price depends of nights and guests
+  function calcPrice() {
+    // let summ = Math.round(($('.sleep__nights').val() * $('.sleep__summ').data('nights')) +
+    //   ($('.sleep__guests').val() * $('.sleep__summ').data('guests')));
+      
+    // $('.sleep__summ').html('$' + summ);
+    console.log('yes');
+  }
+
+  calcPrice();
+  $('.holder__slider-item.slick-current.slick-active .quantity-button').on('click', calcPrice);
+  
+
   /* =================================================================================== */
 
   // change header map parts
