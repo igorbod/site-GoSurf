@@ -36,12 +36,12 @@ window.addEventListener('DOMContentLoaded', function () {
     focusOnSelect: true
   });
 
-  // Section Travel slider
-  $('.travel__slider').slick({
+  // Section holder slider
+  $('.holder__slider').slick({
     infinite: true,
     fade: true,
-    prevArrow: '<img src="img/icons/arrow-left.svg" alt="Previous" class="slick-prev slider-prev slider-prev_travel slider-btn-travel">',
-    nextArrow: '<img src="img/icons/arrow-right.svg" alt="Next" class="slick-next slider-next slider-next_travel slider-btn-travel">'
+    prevArrow: '<img src="img/icons/arrow-left.svg" alt="Previous" class="slick-prev slider-prev slider-prev_holder slider-btn-holder">',
+    nextArrow: '<img src="img/icons/arrow-right.svg" alt="Next" class="slick-next slider-next slider-next_holder slider-btn-holder">'
   });
 
   // change header map parts

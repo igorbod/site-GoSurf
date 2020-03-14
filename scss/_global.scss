@@ -99,11 +99,15 @@ ul {
     opacity: 0.07;
   }
   &_surf,
-  &_travel {
-    position: absolute;
-    top: 5px;
-    left: -290px;
+  &_holder {
+    &-travel,
+    &-sleep {
+      position: absolute;
+      top: 5px;
+      left: -290px;
+     }
   }
+    
 }
 
 // Slider buttons
@@ -127,8 +131,8 @@ ul {
   opacity: 1;
 }
 
-.slider-prev_travel,
-.slider-next_travel {
+.slider-prev_holder,
+.slider-next_holder {
   top: 320px;
 }
 
@@ -176,7 +180,8 @@ ul {
   }
 
   // Button: Travel section
-  &_travel {
+  &_travel,
+  &_sleep {
     text-align: center;
   }
 }
