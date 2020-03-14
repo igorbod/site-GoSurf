@@ -9,21 +9,21 @@
   &__subtitle {
     &-bottom {
       &-vertline {
-        font-weight: 300;
+        font-weight: 100;
       }
       &-city {
         display: inline-block;
-        margin-right: 25px;
       }
       img {
         display: inline-block;
       }
     }
     &-wrap {
+      position: relative;
+      z-index: 1;
       text-align: right;
       padding-right: 80px;
       margin-top: 200px;
-
       &_left {
         text-align-last: left;
         padding-left: 135px;

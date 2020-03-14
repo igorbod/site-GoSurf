@@ -1,3 +1,14 @@
 .sleep {
-  
+  &__rating-star {
+    display: inline-block;
+    color: $accent;
+    font-size: 22px;
+    line-height: 1;
+    margin-left: 25px;
+  }
+}
+
+.holder__subtitle-bottom_sleep {
+  display: flex;
+  align-items: center;
 }

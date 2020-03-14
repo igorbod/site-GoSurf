@@ -32,7 +32,7 @@ ul {
   font-weight: 800;
   line-height: 1;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 30px;
 }
 
@@ -99,15 +99,12 @@ ul {
     opacity: 0.07;
   }
   &_surf,
-  &_holder {
-    &-travel,
-    &-sleep {
-      position: absolute;
-      top: 5px;
-      left: -290px;
-     }
+  &_holder-travel,
+  &_holder-sleep {
+    position: absolute;
+    top: 5px;
+    left: -290px;
   }
-    
 }
 
 // Slider buttons
