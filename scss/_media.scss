@@ -1,0 +1,101 @@
+@media (max-width: 1440px) {
+  .header {
+    &__title {
+      font-size: 130px;
+      line-height: 0.85;
+      left: 75px;
+    }
+    &__menu {
+      margin-bottom: 15px;
+    }
+    .menu__item {
+      margin-bottom: 20px;
+    }
+    &__search {
+      margin-bottom: 15px;
+    }
+    &__aside {
+      width: auto;
+    }
+    &__logo {
+      margin-bottom: 20px;
+      &-link {
+        width: 100%;
+      }
+      &-img {
+        max-width: 100px;
+      }
+    }
+    &__date {
+      margin-bottom: 10px;
+      &-day {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 5px;
+      }
+      &-month,
+      &-year {
+        font-size: 14px;
+      }
+    }
+    &__location {
+      &-name {
+        font-size: 10px;
+      }
+    }
+    .button__next-section {
+      left: 140px;
+    }
+    &__map {
+      svg {
+        width: 700px;
+        height: 400px;
+      }
+      &-current {
+        top: 60px;
+        right: 180px;
+        font-size: 14px;
+      }
+      &-place-1 {
+        top: 165px;
+        right: 455px;
+        font-size: 14px;
+      }
+      &-place-2 {
+        top: 235px;
+        right: 315px;
+        font-size: 14px;
+      }
+      &-place-3 {
+        top: 270px;
+        right: 255px;
+        font-size: 14px;
+      }
+      &-place-4 {
+        top: 340px;
+        right: 210px;
+        font-size: 14px;
+      }
+    }
+    .slider-item__info-title {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 15px;
+    }
+    .slider-item__info-suptitle {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 5px;
+    }
+    .slider-item__info-name {
+      font-size: 35px;
+      line-height: 35px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+}
