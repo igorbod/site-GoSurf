@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 
   // Section holder slider
-  $('.holder__slider').slick({
+  $('.holder__slider, .shop__slider').slick({
     infinite: true,
     fade: true,
     prevArrow: '<img src="img/icons/arrow-left.svg" alt="Previous" class="slick-prev slider-prev slider-prev_holder slider-btn-holder">',
@@ -89,6 +89,12 @@ window.addEventListener('DOMContentLoaded', function () {
   $('.quantity-button').on('click', calcPrice);
   
   /* =================================================================================== */
+
+
+  // Section Shop hide/show text on surfboard when click "+"/"-" button
+  $('.surfboard-box__circle').on('click', function() {
+    $(this).toggleClass('active');
+  });
 
   // change header map parts
   let buttonSlider = document.querySelectorAll('.slider-btn-header'),
