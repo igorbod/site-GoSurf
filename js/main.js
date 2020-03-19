@@ -79,17 +79,15 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // calculate current price depends of nights and guests
   function calcPrice() {
-    let summ = Math.round(($('.slick-current .sleep__nights').val() * $('.slick-current .sleep__summ').data('nights')) +
-      ($('.slick-current .sleep__guests').val() * $('.slick-current .sleep__summ').data('guests')));
-      
+    let summ = Math.round(($('.slick-current .sleep__nights').val() * $('.slick-current .sleep__summ').data('nights')) + ($('.slick-current .sleep__guests').val() * $('.slick-current .sleep__summ').data('guests')));
+
     $('.slick-current .sleep__summ').html('$' + summ);
-    console.log('yes');
   }
 
-  // calcPrice();
+  calcPrice();
+  $('.slider-btn-holder').on('click', calcPrice);
   $('.quantity-button').on('click', calcPrice);
   
-
   /* =================================================================================== */
 
   // change header map parts
