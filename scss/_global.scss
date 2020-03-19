@@ -182,4 +182,14 @@ ul {
   &_sleep {
     text-align: center;
   }
+
+  // Button: footer
+  &_footer {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    .btn-box__second {
+      padding: 15px;
+    }
+  }
 }
