@@ -79,15 +79,15 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // calculate current price depends of nights and guests
   function calcPrice() {
-    // let summ = Math.round(($('.sleep__nights').val() * $('.sleep__summ').data('nights')) +
-    //   ($('.sleep__guests').val() * $('.sleep__summ').data('guests')));
+    let summ = Math.round(($('.slick-current .sleep__nights').val() * $('.slick-current .sleep__summ').data('nights')) +
+      ($('.slick-current .sleep__guests').val() * $('.slick-current .sleep__summ').data('guests')));
       
-    // $('.sleep__summ').html('$' + summ);
+    $('.slick-current .sleep__summ').html('$' + summ);
     console.log('yes');
   }
 
-  calcPrice();
-  $('.holder__slider-item.slick-current.slick-active .quantity-button').on('click', calcPrice);
+  // calcPrice();
+  $('.quantity-button').on('click', calcPrice);
   
 
   /* =================================================================================== */
