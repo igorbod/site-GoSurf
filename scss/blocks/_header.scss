@@ -156,6 +156,21 @@
  
 }
 
+.menu-btn {
+  display: none;
+  width: 60px;
+  position: absolute;
+  right: 32px;
+  top: 60px;
+  z-index: 1;
+  cursor: pointer;
+  &__line {
+    height: 3px;
+    background-color: $accent;
+    margin: 7px 0;
+  }
+}
+
 .menu {
   margin-bottom: 38px;
   &__item {

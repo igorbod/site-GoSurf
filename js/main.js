@@ -157,4 +157,8 @@ window.addEventListener('DOMContentLoaded', function () {
   let ipwhois = request_ipwhois(ipaddress);
   $(".header__location-name").html(ipwhois.city);
   $(".header__map-current").html(ipwhois.city); */
+
+  $('.menu-btn').on('click', function() {
+    $('.menu').toggleClass('active');
+  });
 });
